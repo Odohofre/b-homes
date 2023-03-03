@@ -1,0 +1,58 @@
+import { useState } from "react";
+
+const links = [
+  { id: "services", text: "services" },
+  { id: "product", text: "product" },
+  { id: "about", text: "about us" },
+];
+
+export default function NavBar() {
+  const [activeSection, setActiveSection] = useState("");
+  function handleClick(sectionId) {
+    setActiveSection(sectionId);
+  }
+
+  return (
+    <header className="sticky top-0 z-50  bg-dark-brown text-white pt-14 pb-10">
+      <nav className="flex w-full items-center justify-between font-bold px-32 uppercase">
+        {/* Logo */}
+        <div className="">
+          <a
+            href="#"
+            className="flex items-center text-3xl leading-10 flex-grow-0"
+          >
+            b
+            <span className="inline-block w-4 h-4 rounded-full bg-[#d9d9d9] mx-[6px]"></span>
+            homes
+          </a>
+        </div>
+
+        {/* DESKTOP NAV */}
+        <div className="flex items-center justify-between">
+          <div className="text-sm space-x-24">
+            {links.map((link) => (
+              <a
+                key={link.id}
+                href={`#${link.id}`}
+                className={`py-2 hover:border-b-3 hover:border-white/70 ${
+                  activeSection === link.id ? "border-b-3 border-white" : ""
+                } `}
+                onClick={() => handleClick(`${link.id}`)}
+              >
+                {link.text}
+              </a>
+            ))}
+
+            {/* Call to Action */}
+            <button
+              href="#"
+              className="block mt-4 md:inline-block md:mt-0 p-2.5 bg-royal-blue rounded-default"
+            >
+              Contact Us
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+}

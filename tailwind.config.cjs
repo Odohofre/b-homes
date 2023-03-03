@@ -1,8 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "dark-brown": "#0F0F0F",
+        "royal-blue": "#2949c6",
+      },
+      fontFamily: {
+        Mont: ["Montserrat", "sans-serif"],
+      },
+      borderWidth: {
+        3: "3px",
+      },
+      borderRadius: {
+        default: "10px",
+      },
+      space: {
+        30: '7.5rem'
+      }
+    },
   },
   plugins: [],
-}
+};
