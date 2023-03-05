@@ -14,7 +14,7 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-50  bg-dark-brown text-white pt-14 pb-10">
-      <nav className="flex w-full items-center justify-between font-bold px-32 uppercase">
+      <nav className="flex w-full items-center justify-between font-bold lg:px-32 uppercase">
         {/* Logo */}
         <div className="">
           <a
