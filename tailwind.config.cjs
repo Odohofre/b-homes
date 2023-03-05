@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "dark-brown": "#0F0F0F",
         "royal-blue": "#2949c6",
+        "grey-brown": "#bbbbbb",
       },
       fontFamily: {
         Mont: ["Montserrat", "sans-serif"],
@@ -16,9 +17,9 @@ module.exports = {
       borderRadius: {
         default: "10px",
       },
-      space: {
-        30: '7.5rem'
-      }
+      spacing: {
+        30: "7.5rem",
+      },
     },
   },
   plugins: [],
