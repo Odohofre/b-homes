@@ -7,7 +7,7 @@ export default function Footer() {
           className="flex items-center text-3xl leading-10 flex-grow-0"
         >
           b
-          <span className="inline-block bg-dark-brown w-4 h-4 rounded-full mx-[6px]"></span>
+          <span className="inline-block bg-dark-800 w-4 h-4 rounded-full mx-[6px]"></span>
           homes
         </a>
       </div>
@@ -15,7 +15,7 @@ export default function Footer() {
       {/* Social media links */}
       <nav>
         <ul className="flex justify-center space-x-7">
-          <li className="bg-grey-100 rounded-full p-2">
+          <li className="bg-dark-100 rounded-full p-2">
             <svg
               width="25"
               height="24"
@@ -29,7 +29,7 @@ export default function Footer() {
               />
             </svg>
           </li>
-          <li className="p-2 bg-grey-100 rounded-full">
+          <li className="p-2 bg-dark-100 rounded-full">
             <svg
               width="24"
               height="24"
@@ -43,7 +43,7 @@ export default function Footer() {
               />
             </svg>
           </li>
-          <li className="bg-grey-100 rounded-full p-2">
+          <li className="bg-dark-100 rounded-full p-2">
             <svg
               width="25"
               height="24"
@@ -57,7 +57,7 @@ export default function Footer() {
               />
             </svg>
           </li>
-          <li className="bg-grey-100 rounded-full p-2">
+          <li className="bg-dark-100 rounded-full p-2">
             <svg
               width="25"
               height="24"
@@ -71,7 +71,7 @@ export default function Footer() {
               />
             </svg>
           </li>
-          <li className="bg-grey-100 rounded-full p-3">
+          <li className="bg-dark-100 rounded-full p-3">
             <svg
               width="17"
               height="16"
