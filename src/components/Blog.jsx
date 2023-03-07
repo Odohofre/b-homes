@@ -1,5 +1,5 @@
 import Button from "./Button";
-import SectionHeading from "./SectionHeading";
+import SectionHead from "./SectionHead";
 import ImageCard from "./ImageCard";
 import crooksGarden from "../assets/crooksgarden.png";
 import gatacit from "../assets/gaticit-homes.png";
@@ -29,7 +29,7 @@ function BlogCard({ href }) {
 export default function Blog() {
   return (
     <section className="my-14 mx-5 lg:px-30 space-y-3">
-      <SectionHeading heading="our Blog" />
+      <SectionHead heading="our Blog" />
       <div className="flex flex-col justify-between items-start md:flex-row mt-6">
         <h2 className="text-royal-blue text-5xl font-medium lg:w-[334px]">
           Latest housing Information
