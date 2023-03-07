@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Button from "./Button";
 
 const links = [
   { id: "services", text: "services" },
@@ -44,12 +45,7 @@ export default function NavBar() {
             ))}
 
             {/* Call to Action */}
-            <button
-              href="#"
-              className="block mt-4 md:inline-block md:mt-0 p-2.5 bg-royal-blue rounded-default"
-            >
-              Contact Us
-            </button>
+            <Button content="Contact Us" change={true} variant="py-2.5 px-5 bg-royal-blue text-white hover:bg-white hover:font-medium hover:text-royal-blue" />
           </div>
         </div>
       </nav>
