@@ -1,5 +1,6 @@
 import Button from "./Button";
 import SectionHead from "./SectionHead";
+import SectionSubhead from "./SectionSubhead";
 import ImageCard from "./ImageCard";
 import crooksGarden from "../assets/crooksgarden.png";
 import gatacit from "../assets/gaticit-homes.png";
@@ -28,12 +29,14 @@ function BlogCard({ href }) {
 
 export default function Blog() {
   return (
-    <section className="my-14 mx-5 lg:px-30 space-y-3">
+    <section className="my-14 mx-5 lg:mx-0 lg:px-30">
       <SectionHead heading="our Blog" />
-      <div className="flex flex-col justify-between items-start md:flex-row mt-6">
-        <h2 className="text-royal-blue text-5xl font-medium lg:w-[334px]">
-          Latest housing Information
-        </h2>
+      <div className="flex flex-col justify-between items-start md:flex-row mt-3">
+        <SectionSubhead
+          content="Latest housing Information"
+          change={true}
+          variant="lg:w-[334px] text-5xl"
+        />
         <p className="lg:w-[488px] text-dark-50">
           We are always ready to help by providing the best service for you. We
           believe a good place to live can make your life better and
@@ -41,7 +44,7 @@ export default function Blog() {
         </p>
         <Button content="See More" variant="px-12 py-5" />
       </div>
-      <div className="mt-6 flex flex-col space-y-8 lg:space-y-0 lg:flex-row lg:space-x-4">
+      <div className="mt-6 flex flex-col justify-between space-y-8 lg:space-y-0 lg:flex-row">
         <BlogCard href={crooksGarden} />
         <BlogCard href={gatacit} />
         <BlogCard href={gregor} />
