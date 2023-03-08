@@ -1,4 +1,5 @@
 import Button from "./Button";
+import PrimaryButton from "./PrimaryButton";
 import SectionHead from "./SectionHead";
 import SectionSubhead from "./SectionSubhead";
 import ImageCard from "./ImageCard";
@@ -20,7 +21,7 @@ function BlogCard({ href }) {
         <Button
           content="Read More"
           change={true}
-          variant="bg-dark-100 text-royal-blue hover:bg-royal-blue hover:text-dark-100 px-10 py-5"
+          variant="bg-dark-100 text-royal-blue hover:bg-royal-blue hover:text-white px-10 py-5"
         />
       </div>
     </ImageCard>
@@ -42,7 +43,7 @@ export default function Blog() {
           believe a good place to live can make your life better and
           outstanding.
         </p>
-        <Button content="See More" variant="px-12 py-5" />
+        <PrimaryButton text="See More" change={true} variant="" />
       </div>
       <div className="mt-6 flex flex-col justify-between space-y-8 lg:space-y-0 lg:flex-row">
         <BlogCard href={crooksGarden} />

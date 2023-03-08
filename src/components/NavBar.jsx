@@ -45,7 +45,11 @@ export default function NavBar() {
             ))}
 
             {/* Call to Action */}
-            <Button content="Contact Us" change={true} variant="py-2.5 px-5 bg-royal-blue text-white hover:bg-white hover:font-medium hover:text-royal-blue" />
+            <Button
+              content="Contact Us"
+              change={true}
+              variant="py-2.5 px-5 bg-royal-blue text-white hover:bg-white hover:font-bold hover:text-royal-blue"
+            />
           </div>
         </div>
       </nav>
