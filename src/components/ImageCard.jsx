@@ -1,8 +1,10 @@
 export default function ImageCard({ href, children }) {
   return (
-    <div className="max-w-sm border shadow-lg rounded-lg">
-      <img src={href} className="object-cover h-auto" alt="" />
-      <div className="py-10 px-5">{children}</div>
+    <div className="max-w-sm shadow-lg rounded-lg overflow-hidden">
+      <img src={href}
+      width={387}
+      height={256} className="object-cover" alt="" />
+      <div className="py-10 px-5 bg-white">{children}</div>
     </div>
   );
 }

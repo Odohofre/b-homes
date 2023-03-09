@@ -4,6 +4,7 @@ import Company from "./components/Company";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import Blog from "./components/Blog";
+import Popular from "./components/Popular";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavBar />
       <Hero />
       <Company />
+      <Popular />
       <Blog />
       <Testimonials />
       <Footer />
