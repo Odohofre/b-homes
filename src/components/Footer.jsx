@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-between lg:px-30 font-bold py-7">
+    <footer className="flex flex-col md:items-center justify-between px-5 space-y-5 lg:space-y-0 lg:px-30 font-bold py-7">
       <div className="uppercase">
         <a
           href="#"
@@ -14,7 +14,7 @@ export default function Footer() {
 
       {/* Social media links */}
       <nav>
-        <ul className="flex justify-center space-x-7">
+        <ul className="flex  md:justify-center space-x-7">
           <li className="bg-dark-100 rounded-full p-2">
             <svg
               width="25"
@@ -79,7 +79,7 @@ export default function Footer() {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <g clip-path="url(#clip0_2_449)">
+              <g clipPath="url(#clip0_2_449)">
                 <path
                   d="M0.531921 1.146C0.531921 0.513 1.05792 0 1.70692 0H15.3569C16.0059 0 16.5319 0.513 16.5319 1.146V14.854C16.5319 15.487 16.0059 16 15.3569 16H1.70692C1.05792 16 0.531921 15.487 0.531921 14.854V1.146ZM5.47492 13.394V6.169H3.07392V13.394H5.47492ZM4.27492 5.182C5.11192 5.182 5.63292 4.628 5.63292 3.934C5.61792 3.225 5.11292 2.686 4.29092 2.686C3.46892 2.686 2.93192 3.226 2.93192 3.934C2.93192 4.628 3.45292 5.182 4.25892 5.182H4.27492ZM9.18292 13.394V9.359C9.18292 9.143 9.19892 8.927 9.26292 8.773C9.43592 8.342 9.83092 7.895 10.4949 7.895C11.3639 7.895 11.7109 8.557 11.7109 9.529V13.394H14.1119V9.25C14.1119 7.03 12.9279 5.998 11.3479 5.998C10.0739 5.998 9.50292 6.698 9.18292 7.191V7.216H9.16692C9.17223 7.20765 9.17757 7.19932 9.18292 7.191V6.169H6.78292C6.81292 6.847 6.78292 13.394 6.78292 13.394H9.18292Z"
                   fill="black"
