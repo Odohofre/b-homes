@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="flex flex-col md:items-center justify-between px-5 space-y-5 lg:space-y-0 lg:px-30 font-bold py-7">
+    <footer id="contact" className="flex flex-col md:items-center lg:flex-row justify-between px-5 space-y-5 lg:space-y-0 lg:px-30 font-bold py-7">
       <div className="uppercase">
         <a
           href="#"
@@ -14,7 +14,7 @@ export default function Footer() {
 
       {/* Social media links */}
       <nav>
-        <ul className="flex  md:justify-center space-x-7">
+        <ul className="flex  md:justify-center  space-x-7">
           <li className="bg-dark-100 rounded-full p-2">
             <svg
               width="25"
