@@ -5,8 +5,8 @@ import Digital from "../assets/Digital_Realty_log.svg";
 
 export default function Company() {
   return (
-    <section className="px-30 md:h-30 mt-20">
-      <ul className="flex flex-col md:flex-row justify-center items-center space-y-16 md:space-y-0 md:space-x-40">
+    <section className="px-5 lg:px-30 md:h-30 mt-20">
+      <ul className="flex flex-col md:flex-row justify-center items-center space-y-16 shrink-0 md:space-y-0 md:space-x-10 lg:space-x-20">
         <li>
           <img src={Prologis} alt="Prologis Logo" />
         </li>
