@@ -30,22 +30,22 @@ function BlogCard({ href }) {
 
 export default function Blog() {
   return (
-    <section className="my-14 mx-5 lg:mx-0 lg:px-30">
+    <section id="about" className="my-14 mx-5 lg:mx-0 lg:px-30">
       <SectionHead heading="our Blog" />
-      <div className="flex flex-col justify-between items-start md:flex-row mt-3">
+      <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 justify-between items-start mt-3">
         <SectionSubhead
           content="Latest housing Information"
           change={true}
           variant="lg:w-[334px] text-5xl"
         />
-        <p className="lg:w-[488px] text-dark-50">
+        <p className="max-w-sm text-dark-50">
           We are always ready to help by providing the best service for you. We
           believe a good place to live can make your life better and
           outstanding.
         </p>
         <PrimaryButton text="See More" change={true} variant="" />
       </div>
-      <div className="mt-6 flex flex-col justify-between space-y-8 lg:space-y-0 lg:flex-row">
+      <div className="mt-6 flex flex-col lg:flex-row flex-wrap gap-5 justify-between space-y-8 lg:space-y-0 ">
         <BlogCard href={crooksGarden} />
         <BlogCard href={gatacit} />
         <BlogCard href={gregor} />
