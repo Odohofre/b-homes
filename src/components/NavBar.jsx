@@ -38,7 +38,7 @@ export default function NavBar() {
 
   return (
     <header className="sticky top-0 z-50  bg-dark-800 text-white pt-8 pb-6">
-      <nav className="flex md:w-full items-center justify-between font-bold px-5 lg:px-30 uppercase">
+      <nav className="flex md:w-full items-center justify-between font-bold px-5 lg:px-24 xl:px-30 uppercase">
         {/* Logo */}
         <div className="">
           <a
@@ -53,7 +53,7 @@ export default function NavBar() {
 
         {/* DESKTOP NAV */}
         <div className="hidden md:flex md:items-center md:justify-between ">
-          <div className="text-sm md:space-x-4 lg:space-x-24">
+          <div className="text-sm md:space-x-4 lg:space-x-16 xl:space-x-24">
             {links.map((link) => (
               <a
                 key={link.id}
@@ -115,6 +115,8 @@ export default function NavBar() {
                 {link.text}
               </a>
             ))}
+
+            {/* Call to action button */}
             <a
               href="#contact"
               className="inline-block py-2.5 px-5 normal-case bg-royal-blue text-white font-bold rounded-default hover:bg-white hover:font-bold hover:text-royal-blue"

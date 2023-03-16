@@ -80,25 +80,25 @@ function Card({ name, amount, href }) {
 
 export default function Popular() {
   return (
-    <section id="product" className="relative mt-14">
-      <div className="w-full h-[246px]"></div>
-      <div className="w-full h-[429px] bg-dark-800"></div>
-      <div className="mx-5 w-full lg:mx-0 lg:px-30 absolute top-0 left-0">
+    <section id="product" className="relative px-5 lg:h-[675px] lg:px-0 mt-14">
+      <div className="w-full hidden lg:block h-1/3"></div>
+      <div className="w-full hidden lg:block h-2/3 bg-dark-800"></div>
+      <div className="w-full space-y-3 lg:px-30 lg:absolute lg:top-0 lg:left-0">
         
       <SectionHead heading="popular" />
-      <div className="mt-3 flex flex-col justify-between md:flex-row items-center">
+      <div className="mt-3 flex flex-col md:justify-between md:flex-row md:items-center">
         <SectionSubhead
           content="Our Popular Residence"
           change={true}
-          variant="text-[32px]"
+          variant="text-3xl md:text-[32px]"
         />
         <button
           type="button"
-          className="inline-flex justify-between items-center text-dark-700 font-medium"
+          className="inline-flex md:justify-between items-center text-dark-700 font-medium"
         >
           Explore All{" "}
           <svg
-            className="ml-2.5"
+            className="ml-1 md:ml-2.5"
             width="25"
             height="24"
             viewBox="0 0 25 24"
@@ -113,7 +113,7 @@ export default function Popular() {
         </button>
       </div>
 
-      <div className="mt-6 flex flex-col flex-wrap lg:flex-row justify-between">
+      <div className="mt-6 flex flex-col space-y-8 lg:space-y-0 lg:flex-row flex-wrap items-center gap-5 lg:justify-between">
         <Card
           href={crooksGarden}
           name="Crooks Garden City"
