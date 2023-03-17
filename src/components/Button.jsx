@@ -3,7 +3,7 @@ export default function Button({ content, change, variant }) {
   return (
     <button
       type="button"
-      className={`inline-block font-bold rounded-default  ${classes}`}
+      className={`inline-block font-bold rounded-default ${classes}`}
     >
       {content}
     </button>

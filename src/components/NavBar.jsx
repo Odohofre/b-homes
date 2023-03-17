@@ -14,8 +14,10 @@ export default function NavBar() {
   const [isOpen, setOpen] = useState(false);
   const menuRef = useRef();
 
+  // handle click event for links
   function handleClick(sectionId) {
     setActiveSection(sectionId);
+    setOpen(false);
   }
 
   const handleLinkClick = () => {
@@ -24,7 +26,7 @@ export default function NavBar() {
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {
-      handleLinkClick();
+      setOpen(false);
     }
   };
 
@@ -109,7 +111,7 @@ export default function NavBar() {
                   activeSection === link.id ? "border-b-3 border-white" : ""
                 } `}
                 onClick={() => {
-                  return setOpen(false), handleClick(`${link.id}`);
+                  return handleClick(`${link.id}`);
                 }}
               >
                 {link.text}
