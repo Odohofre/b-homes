@@ -3,6 +3,9 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      boxShadow: {
+        'img': '4px 15px 60px rgba(0, 0, 0, 0.4);'
+      },
       borderWidth: {
         3: "3px",
       },
