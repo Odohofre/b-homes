@@ -21,7 +21,7 @@ function Display({ img, number, content }) {
 
 export default function Hero() {
   return (
-    <section className="px-5 flex flex-col lg:flex-row pt-8 lg:pt-16 mb-2 bg-dark-800 lg:px-30">
+    <section className="px-5 flex flex-col lg:flex-row pt-8 lg:pt-16 lg:pb-9 mb-2 bg-dark-800 lg:px-30">
       <div className="lg:h-[625px] bg-[#d9d9d9]/20 lg:px-5 lg:pt-[1.125rem] rounded-t-[400px]  backdrop-blur-[50px] shrink-0 grow-0">
         <img
           src={intro}

@@ -12,7 +12,7 @@ function Card({ name, title, content, href }) {
       />
       <div className="px-6 md:px-0 md:pl-6">
         <p className="text-dark-400 mt-4 md:0">{content}</p>
-        <div className="flex space-x-1.5 items-center md:flex-col">
+        <div className="flex space-x-1.5 md:flex-col">
           <h1 className="text-2xl md:text-3xl font-medium md:mt-7">{name}</h1>
           <h2 className="text-sm md:text-lg md:mt-1 text-dark-400">{title}</h2>
         </div>
