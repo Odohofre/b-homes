@@ -45,7 +45,7 @@ export default function Blog() {
         </p>
         <PrimaryButton text="See More" change={true} variant="" />
       </div>
-      <div className="mt-6 flex flex-col lg:flex-row flex-wrap gap-5 justify-between space-y-8 lg:space-y-0 ">
+      <div className="mt-6 flex flex-col lg:flex-row flex-wrap items-center gap-5 justify-between space-y-8 lg:space-y-0 ">
         <BlogCard href={crooksGarden} />
         <BlogCard href={gatacit} />
         <BlogCard href={gregor} />
