@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Services from "./components/Services";
 import Blog from "./components/Blog";
 import Popular from "./components/Popular";
-import FAQ from "./components/Faq";
+import Value from "./components/Value";
 
 function App() {
   return (
@@ -16,8 +16,8 @@ function App() {
       <Company />
       <Popular />
       <Services />
+      <Value />
       <Blog />
-      <FAQ />
       <Testimonials />
       <Footer />
     </>

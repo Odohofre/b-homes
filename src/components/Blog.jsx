@@ -30,7 +30,7 @@ function BlogCard({ href }) {
 
 export default function Blog() {
   return (
-    <section id="about" className="my-14 mx-5 lg:mx-0 lg:px-30">
+    <section id="about" className="mt-20 mb-14 mx-5 lg:mx-0 lg:px-30">
       <SectionHead heading="our Blog" />
       <div className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 justify-between items-start mt-3">
         <SectionSubhead

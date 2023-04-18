@@ -20,9 +20,8 @@ export default function NavBar() {
     setOpen(false);
   }
 
-  const handleLinkClick = () => {
-    setOpen(false);
-  };
+  const handleLinkClick = () => setOpen(false);
+  
 
   const handleClickOutside = (event) => {
     if (menuRef.current && !menuRef.current.contains(event.target)) {

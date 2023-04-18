@@ -5,7 +5,7 @@ import SectionSubhead from "./SectionSubhead";
 
 export default function Services() {
   return (
-    <section id="services" className="flex flex-col lg:flex-row mt-20 m:max-w-5xl pt-3 px-5 lg:px-28">
+    <section id="services" className="flex flex-col lg:flex-row mt-20 pt-3 px-5 lg:px-28">
       <div className="bg-[#D9D9D9]/20 rounded-t-[400px] hidden lg:block lg:h-[625px] pt-7 px-5"><img width={600} className="object-cover" src={serviceImage} /></div>
       
       <div className="lg:py-24 lg:pl-30 pr-5">
